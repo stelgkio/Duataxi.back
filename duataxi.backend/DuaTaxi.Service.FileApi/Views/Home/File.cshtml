@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "File";
+}
+
+<h1>Flat UI - Custom Input:file</h1>
+<h2>With JS return</h2>
+
+@*<form action="#">
+    <div class="input-file-container">
+        <input class="input-file" id="my-file" type="file">
+        <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+    </div>
+    <p class="file-return"></p>
+</form>*@
+
+
+
+
+<form method="post" enctype="multipart/form-data" asp-controller="File" asp-action="Upload">
+
+    <div class="input-file-container">
+        <input class="input-file" id="my-file" type="file" name="files" multiple>
+        <label tabindex="0" for="my-file" class="input-file-trigger"  >Select a file...</label>
+    </div>   
+<input  class="btn btn-dark" type="submit" value="Upload">
+         
+        
+   
+</form>

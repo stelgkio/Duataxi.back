@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>    
+    <UserSecretsId>8ea684e1-d709-4f00-b29e-d74bf0869d76</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.5.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\DuaTaxi.Common\DuaTaxi.Common.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Messages\Commands\MiniBusDriver\" />
+    <Folder Include="Messages\Commands\BusDriver\" />
+    <Folder Include="Messages\Commands\Payments\" />
+  </ItemGroup>
+
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="http://json.schemastore.org/bowerrc" /></VisualStudio></ProjectExtensions>
+
+</Project>

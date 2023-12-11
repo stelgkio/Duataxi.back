@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="2.4.0" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.5.0" />        
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuthServer.Infrastructure\DuaTaxi.AuthServer.Infrastructure.csproj" />
+    <ProjectReference Include="..\DuaTaxi.Common\DuaTaxi.Common.csproj" />
+    <ProjectReference Include="..\DuaTaxi.DBContext\DuaTaxi.DBContext.csproj" />
+  </ItemGroup>
+
+</Project>

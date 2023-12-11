@@ -1,0 +1,12 @@
+@url = http://localhost:5001
+
+### create discount
+POST {{url}}/taxidriver
+Content-Type: application/json
+
+{
+    "Id": "ba0fbaf3-cba1-40e1-8000-73a8ab1135a9",
+    "customerId": "ba0fbaf3-cba1-40e1-8000-73a8ab1135a9",
+    "ConnectionId": "ConnectionIdasd",
+    "Status": true
+}
